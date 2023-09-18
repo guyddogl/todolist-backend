@@ -5,7 +5,7 @@ import { itemsRoutes, status } from './routes/index';
 const app = express();
 
 app.use(cors({
-	origin: ['http://127.0.0.1:5173', 'https://todolist-2xa9.onrender.com/'],
+	origin: '*',
 }));
 
 app.use(express.json());
